@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.hero{
+    height:100%;
+    width:100%;
+    background:url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.hero1{
+    height:100%;
+    width:100%;
+    background:url(../images/background11.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
