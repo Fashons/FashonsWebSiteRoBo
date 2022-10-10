@@ -1,60 +1,87 @@
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+}
 body {
-	font-family: Tahoma;
-	background: #ff6c00;
-	margin: 0;
-	background-image: url(back.png);
+	background-color: var(--bg);
+	color: var(--fg);
+	font: 1em/1.5 sans-serif;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	transition: background-color 0.3s;
 }
-h1 {
-	cursor: help;
-	margin: 0;
-	text-transform: uppercase;
-	padding-bottom: 5px;
-	border-bottom: 3px solid #5200a5;
+main {
+	padding: 1.5em 0;
 }
-form {
-	margin: 0 auto;
-	background: rgba(0,186,255,0.77);
-	width: 450px;
-	height: 500px;
-	padding: 20px;
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+
+.pl,
+.pl__worm {
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 }
-.group {
-	margin: 10px;
-	padding: 5px;
+.pl {
+	animation-name: bump;
+	animation-timing-function: linear;
+	width: 8em;
+	height: 8em;
 }
-label {
-	padding-left: 10px;
-	text-transform: uppercase;
+.pl__ring {
+	stroke: hsla(var(--hue),10%,10%,0.1);
+	transition: stroke 0.3s;
 }
-input {
-	margin-top: 10px;
-	height: 40px;
-	width: 400px;
-	border-radius: 20px/20px;
-	border: none;
-	padding-left: 15px;
-	font-size: 18px;
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+.pl__worm {
+	animation-name: worm;
+	animation-timing-function: cubic-bezier(0.42,0.17,0.75,0.83);
 }
-input:focus {
-	border: 2px solid #6c00ff;
-	transform: translateX(15px);
-	width: 385px;
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+	.pl__ring {
+		stroke: hsla(var(--hue),10%,90%,0.1);
+	}
 }
-button {
-	cursor: pointer;
-	padding: 10px 30px;
-	height: 50px;
-	color: #fff;
-	background: #5200a5;
-	border: none;
-	text-transform: uppercase;
-	font-size: 15px;
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+
+/* Animations */
+@keyframes bump {
+	from,
+	42%,
+	46%,
+	51%,
+	55%,
+	59%,
+	63%,
+	67%,
+	71%,
+	74%,
+	78%,
+	81%,
+	85%,
+	88%,
+	92%,
+	to { transform: translate(0,0); }
+	44% { transform: translate(1.33%,6.75%); }
+	53% { transform: translate(-16.67%,-0.54%); }
+	61% { transform: translate(3.66%,-2.46%); }
+	69% { transform: translate(-0.59%,15.27%); }
+	76% { transform: translate(-1.92%,-4.68%); }
+	83% { transform: translate(9.38%,0.96%); }
+	90% { transform: translate(-4.55%,1.98%); }
 }
-button:hover {
-	opacity: .80;
-	font-weight: bold;
-	transform: scale(1.1);
+@keyframes worm {
+	from { stroke-dashoffset: 10; }
+	25% { stroke-dashoffset: 295; }
+	to { stroke-dashoffset: 1165; }
 }
