@@ -15,3 +15,7 @@ img {
     display: flex;
     text-align: center;
 }
+
+.background {
+    background-image: url("./images/background.jpg");
+}
