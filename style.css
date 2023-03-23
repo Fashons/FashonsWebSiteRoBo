@@ -1,5 +1,6 @@
 body{
-    background-image: url("./images/background3.jpg");
+    background-color: rgb(255, 255, 255);
+    background-size: 100%;
 }
 
 .card {
@@ -9,7 +10,7 @@ body{
     width: 200px;
     margin: 10px;
     padding: 10px;
-    background-color: rgba(0, 134, 175, 0.603);
+    background-color: rgba(0, 134, 175, 0);
 }
 
 img {
@@ -23,5 +24,5 @@ img {
 
 
 .cards h4 {
-    text-shadow: 3px 2px 4px #3ce700;
+    text-shadow: 0px 0px 5px #7700ff;
 }
