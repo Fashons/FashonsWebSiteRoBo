@@ -10,7 +10,7 @@ body{
     width: 200px;
     margin: 10px;
     padding: 10px;
-    background-color: rgba(0, 134, 175, 0);
+    background-color: transparent;
 }
 
 .card img {
@@ -33,3 +33,10 @@ body{
 .cards h4 {
     text-shadow: 0px 0px 5px #7700ff;
 }
+
+@media screen and (max-width: 1000px) {
+    .cards {
+        flex-direction: column;
+    }
+}
+    
