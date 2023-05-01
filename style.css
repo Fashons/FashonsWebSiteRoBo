@@ -29,16 +29,31 @@ body {
 
 .icon {
     text-align: center;
-    /* margin-top: 10%; */
+    margin-top: 3%;
+    display: block;
 }
 
 .icon img {
-    width: 20%;
+    width: 15%;
+    border-radius: 30px 30px 30px 30px;
 }
 
 .privtext {
     text-align: center;
     font-family: 'Comfortaa', cursive;
+    margin-top: 3%;
+}
+
+.privtext p {
+    font-size: 25px;
+}
+
+.privtext h2 {
+    font-size: 55px;
+}
+
+.button {
+    text-align: center;
 }
 
 .cards h4 {
