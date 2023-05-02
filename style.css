@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 body {
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    background-size: cover;
-    height: 100vh;
+    background-color: #ffffff;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/NeZadniyFon.jpg);
 }
 
 .card {
@@ -35,7 +35,7 @@ body {
 
 .icon img {
     width: 15%;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 28px 28px 28px 28px;
 }
 
 .privtext {
@@ -46,10 +46,20 @@ body {
 
 .privtext p {
     font-size: 25px;
+    color: #ffffff;
+    text-shadow: 4px 4px 4px black;
+}
+
+.privtext h1 {
+    color: #ffffff;
+    text-shadow: 4px 4px 4px black;
 }
 
 .privtext h2 {
     font-size: 55px;
+    color: #eeeeee;
+    /* text-shadow: 4px 4px 4px black; */
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
 
 .button {
