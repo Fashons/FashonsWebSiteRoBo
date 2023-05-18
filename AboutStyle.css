@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 body {
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    background-size: cover;
-    height: 100vh;
+    background-color: #ffffff;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/NeZadniyFon.jpg);
 }
 
 .text {
@@ -11,4 +13,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
+}
+
+.end {
+    margin-top: 500px;
+    text-align: center;
+    color: #ffffff;
 }

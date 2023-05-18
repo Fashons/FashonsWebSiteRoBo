@@ -8,25 +8,6 @@ body {
     background-image: url(./images/NeZadniyFon.jpg);
 }
 
-.card {
-    box-shadow: 10px 8px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 50px;
-    width: 200px;
-    margin: 10px;
-    padding: 10px;
-    background-color: transparent;
-}
-
-.card img {
-    border-radius: 30px 30px 30px 30px;
-}
-
-.cards {
-    display: flex;
-    text-align: center;
-}
-
 .icon {
     text-align: center;
     margin-top: 3%;
@@ -64,14 +45,4 @@ body {
 
 .button {
     text-align: center;
-}
-
-.cards h4 {
-    text-shadow: 0px 0px 5px #7700ff;
-}
-
-@media screen and (max-width: 1000px) {
-    .cards {
-        flex-direction: column;
-    }
 }
