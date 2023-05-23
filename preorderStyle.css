@@ -8,6 +8,22 @@ body {
     background-image: url(./images/NeZadniyFon.jpg);
 }
 
+.preordertext {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 10%;
+}
+
+.preordertext h1 {
+    color: #ffffff;
+    text-shadow: 4px 4px 4px black;
+}
+
+.button {
+    text-align: center;
+    margin-top: 200px;
+}
+
 .end {
     margin-top: 700px;
     text-align: center;
